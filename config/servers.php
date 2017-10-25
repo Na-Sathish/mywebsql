@@ -31,7 +31,7 @@
 	// if the above is true, only the following server types will be allowed
 	// sqlite is not recommended here, in order to avoid possible file system attacks
 	$ALLOW_CUSTOM_SERVER_TYPES = "mysql,pgsql";
-	$name = getenv('SERVE_NAME');
+	$name = getenv('SERVER_NAME');
 
 	$SERVER_LIST = array(
 		$name                    => array(

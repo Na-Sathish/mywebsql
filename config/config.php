@@ -8,6 +8,7 @@
  * @web        http://mywebsql.net
  * @license    http://mywebsql.net/license
  */
+ 
 
 	define('TRACE_MESSAGES', FALSE);            // logs verbose stuff in the error log file (only enable for debugging)
 	define('TRACE_FILEPATH', "");               // if logs are to be directed to a separate file other than the default
@@ -17,6 +18,6 @@
 	define('HOTKEYS_ENABLED', TRUE);            // enable hotkeys
 
 	define('DEFAULT_EDITOR', "codemirror");     // if not set by the user, this editor will be used
-	define('DEFAULT_THEME', 'default');         // if not set by the user, this theme will be used
+	define('DEFAULT_THEME', getenv("THEME"));         // if not set by the user, this theme will be used
 	define('DEFAULT_LANGUAGE', 'en');           // if not set by the user, this langauge will be used for the interface
 ?>

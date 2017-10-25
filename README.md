@@ -30,5 +30,5 @@ As of the current version, MyWebSQL works with MySQL4 / MySQL5 ,SQLite and Postg
 ## How to run this image
 
 ```sh
-docker run --link mysql:mysql -p 8080:80 -e REMOTE_ADDR=mysql -e SERVER_NAME=myserver ibandla/mywebsql
+docker run --link mysql:mysql -p 8080:80 -e THEME=pinky -e REMOTE_ADDR=mysql -e SERVER_NAME=myserver ibandla/mywebsql
 ```
