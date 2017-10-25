@@ -31,11 +31,12 @@
 	// if the above is true, only the following server types will be allowed
 	// sqlite is not recommended here, in order to avoid possible file system attacks
 	$ALLOW_CUSTOM_SERVER_TYPES = "mysql,pgsql";
-	$name = getenv('SERVER_NAME');
-
+	$name = getenv('SERVER');
+	$host = getenv('HOST');
+	
 	$SERVER_LIST = array(
 		$name                    => array(
-									 'host'     => getenv('REMOTE_ADDR'),
+									 'host'     => $host,
 									 'driver'   => extension_loaded('mysqli') ? 'mysqli' : 'mysql5'
 		                         ),
 	);

@@ -11,12 +11,5 @@ RUN apk add --no-cache apache2 php5-apache2 curl \
     && mkdir -p /opt/utils  
 
 EXPOSE 80
-
-ADD start.sh /opt/utils/
-
-RUN chmod +x /opt/utils/start.sh
-
 COPY . /app
-
-
-CMD ["/opt/utils/start.sh"]
+CMD ["/app/start.sh"]
