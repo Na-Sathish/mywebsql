@@ -1,4 +1,4 @@
-# MyWebSQL docker image
+# MyWebSQL docker image [![](https://images.microbadger.com/badges/image/ibandla/mywebsql.svg)](https://microbadger.com/images/ibandla/mywebsql "Get your own image badge on microbadger.com")
 
 A docker image of mywebsql for easy db management
 
