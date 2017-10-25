@@ -35,7 +35,7 @@
 
 	$SERVER_LIST = array(
 		$name                    => array(
-									 'host'     => 'mysql',
+									 'host'     => getenv('REMOTE_ADDR'),
 									 'driver'   => extension_loaded('mysqli') ? 'mysqli' : 'mysql5'
 		                         ),
 	);
